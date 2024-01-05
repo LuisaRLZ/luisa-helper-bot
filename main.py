@@ -2,11 +2,11 @@ from discord.ext import commands
 import os
 import discord
 from discord import app_commands
-from requests_html import AsyncHTMLSession
+from requests_html2 import AsyncHTMLSession
 import re
 from keep_alive import keep_alive
 
-TOKEN = os.environ['TOKEN']
+#TOKEN = os.environ['TOKEN']
 
 #intents = discord.Intents.default()
 intents = discord.Intents.all()
@@ -1346,7 +1346,7 @@ async def on_command_error(ctx, error):
 
 try:
    keep_alive()
-   client.run(os.environ['TOKEN'])
+   client.run('OTU3NTY3NjE2NTg5OTAxODI0.GhqK4J.8qNKd6rAueBuRqsmpgtGI8asx9Whn47HK3sb3A')
 except Exception:
   os.system('kill 1')
 
