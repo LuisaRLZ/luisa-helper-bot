@@ -5,8 +5,9 @@ from discord import app_commands
 from requests_html2 import AsyncHTMLSession
 import re
 from keep_alive import keep_alive
+from tokencito import TOKEN
 
-TOKEN = os.environ['TOKEN']
+#TOKEN = tokencito.TOKEN
 
 #intents = discord.Intents.default()
 intents = discord.Intents.all()
@@ -1346,7 +1347,7 @@ async def on_command_error(ctx, error):
 
 #try:
 keep_alive()
-client.run('TOKEN')
+client.run(TOKEN)
 #except Exception:
   #os.system('kill 1')
 
