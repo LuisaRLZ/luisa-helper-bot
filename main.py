@@ -6,7 +6,7 @@ from requests_html2 import AsyncHTMLSession
 import re
 from keep_alive import keep_alive
 
-#TOKEN = os.environ['TOKEN']
+TOKEN = os.environ['TOKEN']
 
 #intents = discord.Intents.default()
 intents = discord.Intents.all()
@@ -1344,10 +1344,10 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
         await ctx.send("**Command not Found. Please use** `+helper` **to check out my commands!** \n(*This message will be deleted in 5 seconds*)", delete_after=5.0)
 
-try:
-   keep_alive()
-   client.run('OTU3NTY3NjE2NTg5OTAxODI0.GC8shn.58GE4QHs3WlNPnlz24gDRd7cT8C_5pabQdSngs')
-except Exception:
-  os.system('kill 1')
+#try:
+keep_alive()
+client.run('TOKEN')
+#except Exception:
+  #os.system('kill 1')
 
 #####client.run(TOKEN)
