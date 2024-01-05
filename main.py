@@ -1346,7 +1346,7 @@ async def on_command_error(ctx, error):
 
 try:
    keep_alive()
-   client.run('OTU3NTY3NjE2NTg5OTAxODI0.GhqK4J.8qNKd6rAueBuRqsmpgtGI8asx9Whn47HK3sb3A')
+   client.run('OTU3NTY3NjE2NTg5OTAxODI0.GC8shn.58GE4QHs3WlNPnlz24gDRd7cT8C_5pabQdSngs')
 except Exception:
   os.system('kill 1')
 
