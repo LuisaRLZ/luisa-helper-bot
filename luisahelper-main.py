@@ -41,7 +41,7 @@ async def helper(ctx):
                                                   "`+extras` - Shows you some extra goodies you can use for your guild!\n", inline=False)
 
     embed.add_field(name="Note", value="This is my Guild Helper & Tweaks bot. It slowly growing to be a great bot! please have some patience for ol Luisa ❤️ More functions will be added soon!", inline=False)
-
+    print(f"helper command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 
@@ -60,6 +60,7 @@ async def updatelog(ctx):
     embed.add_field(name="Read More:", value="[Click Here](https://docs.google.com/document/d/1-Dd8uMMCnObb7tcYqGkKZTY9L8HcwGy79p6sjIt9E2c/edit?usp=sharing)", inline=False)
 
     # Send the embed
+    print(f"updatelog command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 @client.command(name='potions', aliases=['pots'])
@@ -70,6 +71,7 @@ async def potions(ctx):
     embed.add_field(name="Check the following Excel Spreadsheet", value="[Pots & Manu Info (Click Here)](https://docs.google.com/spreadsheets/d/1EOgLCjuyRAl06H1sYSfKDdvoJxl3dM4zQgKLXmqil_4/edit?usp=sharing)", inline=False)
     embed.add_field(name="Or Select one of the following:", value="`+recoveryhp`\n`+recoverysp`\n`+potshp`\n`+potssp`\n`+potsattack`\n`+otherpots`\n`+shipmanu`\n`+landmanu`", inline=False)
 
+    print(f"potions command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 @client.command(name='recoveryhp', aliases=['hprecovery','hpreco'])
@@ -82,6 +84,7 @@ async def recoveryhp(ctx):
     # Add content to the embed
     embed.add_field(name="Or you can check the following Excel Spreadsheet", value="[Pots & Manu Info (Click Here)](https://docs.google.com/spreadsheets/d/1EOgLCjuyRAl06H1sYSfKDdvoJxl3dM4zQgKLXmqil_4/edit?usp=sharing)", inline=False)
 
+    print(f"recoveryhp command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 @client.command(name='recoverysp', aliases=['sprecovery','spreco'])
@@ -94,6 +97,7 @@ async def recoverysp(ctx):
     # Add content to the embed
     embed.add_field(name="Or you can check the following Excel Spreadsheet", value="[Pots & Manu Info (Click Here)](https://docs.google.com/spreadsheets/d/1EOgLCjuyRAl06H1sYSfKDdvoJxl3dM4zQgKLXmqil_4/edit?usp=sharing)", inline=False)
 
+    print(f"recoverysp command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 @client.command(name='otherpots', aliases=['otherpotions'])
@@ -106,6 +110,7 @@ async def otherpots(ctx):
     # Add content to the embed
     embed.add_field(name="Or you can check the following Excel Spreadsheet", value="[Pots & Manu Info (Click Here)](https://docs.google.com/spreadsheets/d/1EOgLCjuyRAl06H1sYSfKDdvoJxl3dM4zQgKLXmqil_4/edit?usp=sharing)", inline=False)
 
+    print(f"otherpots command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 @client.command(name='potssp', aliases=['sppots', 'sprpotions', 'potionsspr', 'potsspr','sprpots'])
@@ -118,6 +123,7 @@ async def potssp(ctx):
     # Add content to the embed
     embed.add_field(name="Or you can check the following Excel Spreadsheet", value="[Pots & Manu Info (Click Here)](https://docs.google.com/spreadsheets/d/1EOgLCjuyRAl06H1sYSfKDdvoJxl3dM4zQgKLXmqil_4/edit?usp=sharing)", inline=False)
 
+    print(f"potssp command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 @client.command(name='potsattack', aliases=['attackpots', 'potsatt', 'attpots', 'potionsattack', 'attackpotions'])
@@ -130,6 +136,7 @@ async def potsatt(ctx):
     # Add content to the embed
     embed.add_field(name="Or you can check the following Excel Spreadsheet", value="[Pots & Manu Info (Click Here)](https://docs.google.com/spreadsheets/d/1EOgLCjuyRAl06H1sYSfKDdvoJxl3dM4zQgKLXmqil_4/edit?usp=sharing)", inline=False)
 
+    print(f"potsatt command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 @client.command(name='shipmanu', aliases=['seamanu','shipmanufacturing','seamanufacturing'])
@@ -142,6 +149,7 @@ async def shipmanu(ctx):
     # Add content to the embed
     embed.add_field(name="Or you can check the following Excel Spreadsheet", value="[Pots & Manu Info (Click Here)](https://docs.google.com/spreadsheets/d/1EOgLCjuyRAl06H1sYSfKDdvoJxl3dM4zQgKLXmqil_4/edit?usp=sharing)", inline=False)
 
+    print(f"shipmanu command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 @client.command(name='landmanu', aliases=['manu','landmanufacturing','manufacturing'])
@@ -154,6 +162,7 @@ async def landmanu(ctx):
     # Add content to the embed
     embed.add_field(name="Or you can check the following Excel Spreadsheet", value="[Pots & Manu Info (Click Here)](https://docs.google.com/spreadsheets/d/1EOgLCjuyRAl06H1sYSfKDdvoJxl3dM4zQgKLXmqil_4/edit?usp=sharing)", inline=False)
 
+    print(f"landmanu command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 @client.command(name='potshp', aliases=['hppots'])
@@ -166,6 +175,7 @@ async def potshp(ctx):
     # Add content to the embed
     embed.add_field(name="Or you can check the following Excel Spreadsheet", value="[Pots & Manu Info (Click Here)](https://docs.google.com/spreadsheets/d/1EOgLCjuyRAl06H1sYSfKDdvoJxl3dM4zQgKLXmqil_4/edit?usp=sharing)", inline=False)
 
+    print(f"potshp command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 @client.command()
@@ -186,6 +196,8 @@ async def list(ctx):
     )
 
     # Send the initial message with the list
+    print(original_names)
+    print(f"list command used by: {ctx.author.name}")
     msg = await ctx.send(embed=embed)
 
     # Add the emoji to the message (changed to 🖐️ and ❌)
@@ -234,6 +246,8 @@ async def list2(ctx):
     embed.add_field(name="Members:", value='\n'.join(memids), inline=False)
     embed.add_field(name=" ", value="**----DROPS----**", inline=False)
 
+    print(memids)
+    print(f"list2 command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 async def search_and_send(ctx, search_type, text):
@@ -252,6 +266,7 @@ async def search_and_send(ctx, search_type, text):
 
   url = f"https://pirateking.online/database/{search_type}/{formatted_text}.{result_id}"
 
+  print(f"search command used by: {ctx.author.name}")
   await ctx.send(f"{url}\n"
                  f"You may click the link above, remember to type the name of your search as accurately as possible for better results 👍\n"
                  f"You may also check close results by opening this link: <{full_url}>")
@@ -259,14 +274,17 @@ async def search_and_send(ctx, search_type, text):
 
 @client.command()
 async def item(ctx, *, text):
+  print(f"item command used by: {ctx.author.name}")
   await search_and_send(ctx, "item", text)
 
 @client.command()
 async def monster(ctx, *, text):
+  print(f"monster command used by: {ctx.author.name}")
   await search_and_send(ctx, "monster", text)
 
 @client.command()
 async def quest(ctx, *, text):
+  print(f"quest command used by: {ctx.author.name}")
   await search_and_send(ctx, "quest", text)
 
 @client.command()
@@ -289,6 +307,7 @@ async def npc(ctx, *, text):
 
     result_url = f"https://pirateking.online/database/npc/{npc_search_garner}/{formatted_text}.{npc_search_id}"
 
+    print(f"npc command used by: {ctx.author.name}")
     await ctx.send(f"{result_url}\n"
                    f"You may click the link above, remember to type the name of your search as accurately as possible for better results 👍\n"
                    f"You may also check close results by opening this link: <{url_full}>")
@@ -329,6 +348,7 @@ async def tweaks(ctx):
     # Website
     embed.add_field(name="Website", value="Or you may also pick them from my website! [Click Here](https://luisarlzproductions.com/tweaks/tweaks-main.html)", inline=False)
 
+    print(f"tweaks command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 @client.command(name='tweaksall', aliases=['alltweaks'])
@@ -373,6 +393,7 @@ async def tweaksall(ctx):
       inline=False
   )
 
+    print(f"tweaksall command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 @client.command(name='pkotweaks', aliases=['tweakspko'])
@@ -427,7 +448,7 @@ async def tweakspko(ctx):
     )
 
     embed.set_thumbnail(url="https://i.imgur.com/QvSh7yh.png")
-
+    print(f"tweakspko command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 @client.command(name='potweaks', aliases=['tweakspo'])
@@ -478,6 +499,7 @@ async def tweakspo(ctx):
 
     embed.set_thumbnail(url="https://i.imgur.com/sJeQmW9.png")
 
+    print(f"tweakspo command used by: {ctx.author.name}")
     await ctx.send(embed=embed)
 
 
@@ -544,6 +566,7 @@ def create_generic_command(name, title, description, param1, value1, param2, val
         else:
             embed.set_footer(text="This is a preview. Tweak downloaded from luisarlzproductions.com. Use +invite to invite this bot to your Discord Server.")
 
+        print(f"tweakspecific command used by: {ctx.author.name}")
         await ctx.send(embed=embed)
 
 # Create commands using create_generic_command
@@ -1218,6 +1241,7 @@ async def guides(ctx):
         text=
         "If you've got any guide you'd like to add, please message me @luisarlz"
     )
+    print(f"guides command used by: {ctx.author.name}")
     await ctx.send(embed=guides)
 
 @client.command()
@@ -1242,6 +1266,7 @@ async def bots(ctx):
         text=
         "If you've got any bot you'd like to add, please message me @luisarlz"
     )
+    print(f"bots command used by: {ctx.author.name}")
     await ctx.send(embed=bots)
 
 @client.command(name='tweaksindex', aliases=['index'])
@@ -1266,6 +1291,7 @@ async def tweaksindex(ctx):
         text=
         "If you've got any tweaks you'd like to add, please message me @luisarlz"
     )
+  print(f"tweaksindex command used by: {ctx.author.name}")
   await ctx.send(embed=tweaksindex)
 
 @client.command(name='rosotweaks', aliases=['tweaksroso'])
@@ -1290,6 +1316,7 @@ async def rosotweaks(ctx):
         text=
         "If you've got any tweak you'd like to add, please message me @luisarlz"
     )
+    print(f"rosotweaks command used by: {ctx.author.name}")
     await ctx.send(embed=rosotweaks)
 
 @client.command()
@@ -1314,6 +1341,7 @@ async def extras(ctx):
         text=
         "If you've got any material you'd like to add, please message me @luisarlz"
     )
+    print(f"extras command used by: {ctx.author.name}")
     await ctx.send(embed=extras)
 
 @client.command(name='invite', aliases=['inviteme','invitebot'])
@@ -1338,6 +1366,7 @@ async def invite(ctx):
         text=
         "If you've got any doubt or suggestion on this bot, please message me @luisarlz"
     )
+    print(f"invite command used by: {ctx.author.name}")
     await ctx.send(embed=invite)
 
 @client.event
@@ -1345,10 +1374,10 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
         await ctx.send("**Command not Found. Please use** `+helper` **to check out my commands!** \n(*This message will be deleted in 5 seconds*)", delete_after=5.0)
 
-#try:
-keep_alive()
-client.run(TOKEN)
-#except Exception:
-  #os.system('kill 1')
+try:
+  keep_alive()
+  client.run(TOKEN)
+except Exception:
+  os.system('kill 1')
 
 #####client.run(TOKEN)
