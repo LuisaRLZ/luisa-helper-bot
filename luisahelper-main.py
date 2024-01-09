@@ -2,9 +2,9 @@ from discord.ext import commands
 import os
 import discord
 from discord import app_commands
-from requests_html2 import AsyncHTMLSession
+#from requests_html2 import AsyncHTMLSession
 import re
-from keep_alive import keep_alive
+#from keep_alive import keep_alive
 from tokencito import TOKEN
 
 #TOKEN = tokencito.TOKEN
@@ -1374,10 +1374,10 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
         await ctx.send("**Command not Found. Please use** `+helper` **to check out my commands!** \n(*This message will be deleted in 5 seconds*)", delete_after=5.0)
 
-try:
-  keep_alive()
-  client.run(TOKEN)
-except Exception:
-  os.system('kill 1')
+#try:
+#keep_alive()
+client.run(TOKEN)
+#except Exception:
+  #os.system('kill 1')
 
 #####client.run(TOKEN)
